@@ -47,7 +47,7 @@
   
 </div>
 
-<div v-if="currentMenu === 'practice'" @click="currnetIndex++, shuffleAlg()" style="height:400px">
+<div v-if="currentMenu === 'practice'" @click="currnetIndex++, shuffleAlg(), cheating = false" style="height:205px; backgroundColor:red">
   <button style="float:right; margin-top:-15px; margin-right:15px" @click="currentMenu ='selecting'">Go back to selecting</button>
   <div style="clear:both"></div>
   
@@ -65,6 +65,14 @@
 
   <!-- <p>{{practiceList}}</p> -->
 </div>
+
+<div v-if="currentMenu === 'practice'">
+  <button @click="cheating = !cheating">Cheat button</button>
+  <p v-if="cheating">{{ollList[practiceList[currnetIndex]].solveAlg }}</p>
+</div>
+
+
+
 
 
 
@@ -90,6 +98,8 @@ export default {
       practiceList: [],
       currnetIndex: 0,
       randomIndex: 0,
+
+      cheating: false,
     }
 
   },
