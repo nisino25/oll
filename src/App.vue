@@ -47,7 +47,7 @@
   
 </div>
 
-<div v-if="currentMenu === 'practice'" @click="currnetIndex++" style="height:400px">
+<div v-if="currentMenu === 'practice'" @click="currnetIndex++, shuffleAlg()" style="height:400px">
   <button style="float:right; margin-top:-15px; margin-right:15px" @click="currentMenu ='selecting'">Go back to selecting</button>
   <div style="clear:both"></div>
   
@@ -55,7 +55,10 @@
   <hr>
   <p>Algorithm ( {{currnetIndex +1}} / 300 )</p>
 
-  <p style="font-size:150%">{{ollShuffleList[practiceList[currnetIndex]][1] }}</p>
+  <p style="font-size:150%">{{ollShuffleList[practiceList[currnetIndex]][randomIndex] }}</p>
+
+  <br>
+  <p>RandomNum: {{randomIndex}}</p>
 
 
 
@@ -158,7 +161,7 @@ export default {
   methods:{
     goingToPractice(){
 
-      this.randomIndex =  Math.floor(Math.random() * 3300) -1
+      this.randomIndex =  0
       console
       this.currnetIndex = 0
       this.currentMenu = 'practice'
@@ -172,7 +175,11 @@ export default {
         this.practiceList.push( this.availableList[ Math.floor(Math.random() * this.availableList.length)])
         count++
       }
-    }
+    },
+
+    shuffleAlg(){
+      this.randomIndex =  Math.floor(Math.random() * 3) 
+    },
   }
 }
 </script>
