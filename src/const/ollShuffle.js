@@ -1,4 +1,4 @@
-export const  rolesList = {
+export const  ollShuffleList = {
 
   0: [`L' U2 L U L' U' L U L' U L`, `F' L2 B2 D2 B' D2 B' L2 F2 U2 F'`, `B' U' B U' B' U B U' B' U2 B`],
   1: [`B R' D2 R B' U B R' D2 R B'`, `R U B' R2 D' F R F' R2 D B R2`, `B U B' U B U F' U B' U' F`],
@@ -18,7 +18,7 @@ export const  rolesList = {
   13: [`B L F U2 F' U L' B' R' U2 R`, `L' B L F B2 R' B' R B R F' B`, `R B' R' B U R L' D B' D' R' L`],
   14: [`F' B2 D L' D' F B2 R' F' U F R`, `F2 L' R U2 B' L2 R2 F' D2 L' R F2`, `R2 B F' U2 L' B2 F2 R U2 B F' L2`],
 
-  
+
   15: [`L' U' B' U B2 L2 B' U2 B' U2 B L'`, `B' U' R' U R2 B L' B' R' B L`, `L F U F' U' L2 U' L U' L' U2 L`],
   16: [`R U R' B2 R D B U' B' D' R' B2`, `R B U B' U R2 U' R2 U' R2 U2 R`, `R U B U' B2 R' F R B R' F'`],
   17: [`B' U' B R D' B2 U B' U' B2 D R'`, `L F R U' R' U R F' L' F R' F'`, `B' U' B2 L U L' B2 U B2 U2 B'`],
@@ -31,12 +31,11 @@ export const  rolesList = {
   24: [`R L' U R' F' U' L' U' L F L`, `F R' F' R U2 R2 D L' B2 L D' R2`, `B U B' U' B' U' R U B U' R' `],
   25: [`B' U2 B U B' R B' R' B U B`, `B D L' D' L2 U L U' L2 B2 U2 B`, `F R' F R F' U' F' U L' U2 L`],
   26: [`R D L2 D L2 D' B' D' B R2 U2 R`, `F2 B L' F L' F' L D' L D F2 B'`, `B L2 F2 D F L D' B' L2 F U' L'`],
-  27: [`B' U' B' R B U2 R2 U' R2 U' R' B`, `F' L F2 R2 D R D2 F D L' F2 R`, `L' U L U' L2 B L2 U L' U' B' L`],
+  27: [`B' U' B' R B U2 R2 U' R2 U' R' B`, `F' L F2 R2 D R D2 F D L' F2 R`, `L' U   L U' L2 B L2 U L' U' B' L`],
   28: [`L' B L' B' L2 B' U F U' B U2 F'`, `L F' L F L2 F U' B' U F' U2 B`, `L F U' F' U F R U R' U F' U' L'`],
   29: [`F' L2 U' L' U B L2 B' F L U L'`, `B L U2 L2 B2 D' B' D B' L U2 B'`, `F' L' F' D F2 D2 B' L U B L' D`],
 
 
-  29: [``, `'`, ``],
   30: [``, ``, ``],
   31: [``, ``, ``],
   32: [``, ``, ``],
@@ -63,8 +62,3 @@ export const  rolesList = {
   53: [``, ``, ``],
   54: [``, ``, ``],
 }
-// rolesList.Werewolf.push({name: '',  imgLink: ''});
-
-
-rolesList.Village.push({name: 'Villager', avialblity: true, amountOfAbility: 100,  imgLink: 'https://static.wikia.nocookie.net/werewolf-online/images/5/58/Villager.png/revision/latest/scale-to-width-down/620?cb=20190629192110'});
-rolesList.Village.push({no: 'Villager', group: 'line', avialblity: false, amountOfAbility: 100,  imgLink: 'https://static.wikia.nocookie.net/werewolf-online/images/5/58/Villager.png/revision/latest/scale-to-width-down/620?cb=20190629192110'});
