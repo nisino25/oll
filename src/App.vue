@@ -47,7 +47,7 @@
   
 </div>
 
-<div v-if="currentMenu === 'practice'" @click="currnetIndex++, shuffleAlg(), cheating = false" style="height:205px; backgroundColor:red">
+<div v-if="currentMenu === 'practice'" @click="currnetIndex++, shuffleAlg(), cheating = false" style="height:205px">
   <button style="float:right; margin-top:-15px; margin-right:15px" @click="currentMenu ='selecting'">Go back to selecting</button>
   <div style="clear:both"></div>
   
